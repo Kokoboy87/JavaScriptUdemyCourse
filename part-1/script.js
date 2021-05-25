@@ -44,7 +44,7 @@ console.log(year);
 console.log(typeof year);
 
 console.log(typeof null);
-*/
+
 
 let age = 30;
 age = 31;
@@ -53,3 +53,4 @@ const birthYear = 1987;
 // birthYear = 1990; //that gives an error because we can't change the Value of a const variable.
 
 const job; //that gives an error also, we can't have an empty value const variable.
+*/
