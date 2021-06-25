@@ -105,4 +105,30 @@ console.log(x, y);
 
 const averageAge = (ageGeorgios + ageMaria) / 2;
 console.log(ageGeorgios, ageMaria, averageAge);
+
+
+//===== Strings and Template literals ========//
+
+const firstName = 'Georgios';
+const job = 'Bartender';
+const birthYear = 1987;
+const year = 2021;
+//---- old school strings, before ES6 ----//
+const george = "I'm" + ' ' + firstName + ', a ' + (year - birthYear) + ' years old ' + job + '!';
+console.log(george);
+//---- Template literals ( `` ) is the new way with the ES6 to use instead of string ----//
+const georgeNew = `I'm ${firstName}, a ${year - birthYear} years old ${job}!`;
+console.log(georgeNew);
+
+console.log(`Just a regular string....`); // we can use backticks in newer version of ES6 javascript for any string instead of quotes.
+//---- before ES6 tempate literals ----//
+console.log('String with \n\
+multiple \n\
+lines');
+//---- in ES6 tempate literals ----//
+console.log(`String with
+multiple
+lines`);
 */
+
+//===== Taking Decisions: if / else Statement =====//
