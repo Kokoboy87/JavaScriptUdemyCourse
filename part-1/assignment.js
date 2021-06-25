@@ -8,11 +8,11 @@ population++;
 const description = country + ' is in ' + continent + ', and its ' + population + ' million people speak ' + language;
 const newDescription = `${country} is in ${continent}, and it's ${population} million people speak ${language}`;
 
-if (population >= 33) {
-	console.log(`${country} population is above average`);
-} else {
-	console.log(`${country} population is ${33 - population} million below average`);
-}
+// if (population >= 33) {
+// 	console.log(`${country} population is above average`);
+// } else {
+// 	console.log(`${country} population is ${33 - population} million below average`);
+// }
 
 // console.log(typeof isIsland);
 // console.log(typeof country);

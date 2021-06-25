@@ -151,4 +151,37 @@ if (birthYear <= 2000) {
 	century = 21;
 }
 console.log(century);
+
+
+//=====Type Conversion & Coercion =====//
+// Type Covnersion
+const inputYear = '1987';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Georgios'));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+// Type Coercion
+//----- The + sign trigger a coercion to convert numbers to strings. The + operator is the only one that JavaScript it doesn't convert to a number -----//
+console.log('I am ' + 23 + ' years old');
+//----- The - sign operates the opposite, converte strings to numbers -----//
+console.log('23' - '10' - 3);
+//----- The * & / sign converte strings to numbers, thats the only way the multiplier and deviting operator works -----//
+console.log('23' * '2');
+//----- The > sign converte strings to numbers, that's the only the logical operator works -----//
+console.log('23' > '18');
+
+// Examples of Type Coercion
+let n = '1' + 1; // it converts to '11' string because of the + operator
+n = n - 1; // and here because of the - operator it converts the '11' to 11(number) - 1 = 10
+console.log(n);
+
+let i = 2 + 3 + 4 + '5'; // it calculate the first 3 numbers and the total is 9 and it convert the 9 to a string and it become '9'+'5'='95'
+console.log(i);
+
+let x = '10' - '4' - '3' - 2 + '5'; // the - operator make the strings to a number from '10' to 2 and then the + operator makes it a string again.
+console.log(x);
 */
