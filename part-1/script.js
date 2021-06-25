@@ -132,3 +132,22 @@ lines`);
 */
 
 //===== Taking Decisions: if / else Statement =====//
+
+const age = 15;
+
+if (age >= 18) {
+	console.log('Sarah can start driving 🚗');
+} else {
+	const yearsLeft = 18 - age;
+	console.log(`Sarah is not old enough🛑. Wait another ${yearsLeft} years!`);
+}
+
+const birthYear = 1987;
+
+let century;
+if (birthYear <= 2000) {
+	century = 20;
+} else {
+	century = 21;
+}
+console.log(century);
