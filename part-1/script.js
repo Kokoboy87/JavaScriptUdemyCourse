@@ -129,7 +129,7 @@ lines');
 console.log(`String with
 multiple
 lines`);
-*/
+
 
 //===== Taking Decisions: if / else Statement =====//
 
@@ -151,3 +151,4 @@ if (birthYear <= 2000) {
 	century = 21;
 }
 console.log(century);
+*/
