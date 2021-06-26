@@ -153,7 +153,7 @@ if (birthYear <= 2000) {
 console.log(century);
 
 
-//=====Type Conversion & Coercion =====//
+//===== Type Conversion & Coercion =====//
 // Type Covnersion
 const inputYear = '1987';
 console.log(Number(inputYear), inputYear);
@@ -184,4 +184,60 @@ console.log(i);
 
 let x = '10' - '4' - '3' - 2 + '5'; // the - operator make the strings to a number from '10' to 2 and then the + operator makes it a string again.
 console.log(x);
+
+
+// ===== Truthy and Falsy Values =====//
+// ===========================================================//
+// = 5 Falsy Values: 0, '', undefined, null, NaN = //    // All this values are going to became a false when we try to convert them to a Boolean.
+// ==========================================================//
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Georgios')); // String that is not an Empty string is a truthy value
+console.log(Boolean('')); // Empty string is falsy value
+console.log(Boolean({}));
+
+// That's an example of how the number 0 will be converted to false, Because javascript try to convert 'money' value to a Boolean.And that's why the 'else' statement executed on this example. //
+const money = 0;
+if (money) {
+	console.log("Don't spend it all ;)");
+} else {
+	console.log('You should get a job!');
+}
+
+// Because height is undefined it execute the "else" statement.So that is a Falsy value also.
+let height;
+if (height) {
+	console.log('YAY! Height is defined');
+} else {
+	console.log('Height undefined');
+}
+
+
+//===== Equality Operators =====//
+const age = 18; // if we change the value to '18' sting only the second 'if' statement will be executed
+if (age === 18) console.log('You are old enough (strict)'); // if we have a single line of code we don't need the curly brackets in the 'if' statement.
+
+if (age == 18) console.log('You are old enough (loose)');
+// //---- that it will work with the loose equality operator ----//
+// const favorite = prompt('What is your favorite number?');
+// console.log(favorite);
+// console.log(typeof favorite);
+//---- and that only with the strict equality operator ----//
+const favorite = Number(prompt('What is your favorite number?'));
+console.log(favorite); // We have to wrap the Value into the number function
+console.log(typeof favorite);
+
+if (favorite === 23) {
+	// That work's because of the loose equality operator. if we use the === strict equality operator we need to convert favorite to a number.
+	console.log('Cool! 23 is an amazing number!');
+} else if (favorite === 7) {
+	console.log('7 is also a cool number!');
+} else if (favorite === 9) {
+	console.log('9 is also a cool number!');
+} else {
+	console.log('Number is not 23 or 7 or 9!');
+}
+
+if (favorite !== 23) console.log('Why not 23?'); // That executes only when we choose numbers other than 23.
 */
