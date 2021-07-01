@@ -241,3 +241,26 @@ if (favorite === 23) {
 
 if (favorite !== 23) console.log('Why not 23?'); // That executes only when we choose numbers other than 23.
 */
+
+//===== Logical Operators =====//
+const hasDriveLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriveLicense && hasGoodVision);
+console.log(hasDriveLicense || hasGoodVision);
+console.log(!hasDriveLicense);
+
+// if (hasDriveLicense && hasGoodVision) {
+// 	console.log('Sarah is able to drive');
+// } else {
+// 	console.log('Someone else should drive!!');
+// }
+
+const isTired = false; // C
+console.log(hasDriveLicense && hasGoodVision && isTired);
+
+if (hasDriveLicense && hasGoodVision && !isTired) {
+	console.log('Sarah is able to drive');
+} else {
+	console.log('Someone else should drive...!!');
+}
