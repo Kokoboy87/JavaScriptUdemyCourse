@@ -38,3 +38,38 @@ if (marksBMI > johnsBMI) {
 	console.log(`John's BMI is higher than Mark's`);
 	console.log(`John's BMI (${johnsBMI}) is higher than Mark's (${marksBMI})`);
 }
+
+//====== Challenge 3 =======//
+
+const teamDolphins = (57 + 112 + 101) / 3;
+const teamKoalas = (70 + 95 + 123) / 3;
+console.log(teamDolphins);
+console.log(teamKoalas);
+
+if (teamKoalas > teamDolphins) {
+	console.log('Team Koala is the Winner!!!');
+} else if (teamKoalas < teamDolphins) {
+	console.log('Team Dolphins is the Winner!!!');
+} else {
+	console.log("It's a Draw....");
+}
+
+//+++++ Bonus 1 +++++//
+if (teamDolphins > 100 && teamDolphins > teamKoalas) {
+	console.log('Team Dolphins is the Winner!!!');
+} else if (teamKoalas > 100 && teamKoalas > teamDolphins) {
+	console.log('Team Koala is the Winner!!!');
+} else {
+	console.log('Non of the teams reach 100 points');
+}
+
+//+++++ Bonus 2 +++++//
+if (teamDolphins > 100 && teamDolphins > teamKoalas) {
+	console.log('Team Dolphins is the Winner!!!');
+} else if (teamKoalas > 100 && teamKoalas > teamDolphins) {
+	console.log('Team Koala is the Winner!!!');
+} else if (teamDolphins >= 100 && teamKoalas >= 100 && teamDolphins === teamKoalas) {
+	console.log("it's a Draw...");
+} else {
+	console.log('No team wins the trophy!!!');
+}

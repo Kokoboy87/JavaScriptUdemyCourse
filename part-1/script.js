@@ -240,7 +240,7 @@ if (favorite === 23) {
 }
 
 if (favorite !== 23) console.log('Why not 23?'); // That executes only when we choose numbers other than 23.
-*/
+
 
 //===== Logical Operators =====//
 const hasDriveLicense = true; // A
@@ -264,3 +264,4 @@ if (hasDriveLicense && hasGoodVision && !isTired) {
 } else {
 	console.log('Someone else should drive...!!');
 }
+*/
