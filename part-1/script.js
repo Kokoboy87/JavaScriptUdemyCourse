@@ -264,4 +264,62 @@ if (hasDriveLicense && hasGoodVision && !isTired) {
 } else {
 	console.log('Someone else should drive...!!');
 }
+
+
+//===== Switch Statement =====//
+
+const day = 'sunday';
+
+switch (day) {
+	case 'monday': // Day ==== 'monday'
+		console.log('Plan course structure');
+		console.log('Go to coding meetup');
+		break;
+	case 'tuesday':
+		console.log('Prepare theory videos');
+		break;
+	case 'wednesday': // We can run the same code for 2 differend Values
+	case 'thursday': // what ever we execute here is for both wednesday and thursday
+		console.log('Write code examples');
+		break;
+	case 'friday':
+		console.log('Record videos');
+		break;
+	case 'saturday':
+	case 'sunday':
+		console.log('Enjoy the weekend');
+		break;
+	default:
+		console.log('Not a valid day!');
+}
+
+if (day === 'monday') {
+	console.log(`Plan course structure`);
+	console.log(`Go to coding meetup`);
+} else if (day === 'tuesday') {
+	console.log(`Prepare theory videos`);
+} else if (day === 'wednesday' || day === 'thursday') {
+	console.log(`Write code examples`);
+} else if (day === `friday`) {
+	console.log(`Record videos`);
+} else if (day === 'saturday' || day === 'sunday') {
+	console.log(`Enjoy the weekend`);
+} else {
+	console.log(`Not a valid day!`);
+}
+
+
+//===== Statements and Expressions =====//
+//+++ Expressions +++//
+3 + 4; // is an expression because it produce a value
+1991; // it's an expression also
+true && false && !false; // that's also an expression because at the end produce some boolean value.
+
+//+++ Statements +++// statement is a bigger piece of code that is executed and it does not produce a value on itself
+if (23 > 10) {
+	const str = '23 is bigger'; //This statement it doesn't really produce a value, that's why is a statement
+}
+
+const me = 'Georgios';
+console.log(`I'm ${2021 - 1987} years old ${me}.`); // In Template literal we can only insert expressions, and not Statements
 */
