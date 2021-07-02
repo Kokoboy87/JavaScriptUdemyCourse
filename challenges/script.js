@@ -1,3 +1,4 @@
+/*
 //======= Data 1 =========//
 //+++++ First Challenge +++++//
 // I use let because i wanted to test the Data 2. with const are not allowed to change the values of the varriables.
@@ -73,3 +74,6 @@ if (teamDolphins > 100 && teamDolphins > teamKoalas) {
 } else {
 	console.log('No team wins the trophy!!!');
 }
+*/
+
+//====== Challenge 4 ======//

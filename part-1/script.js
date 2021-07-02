@@ -322,4 +322,25 @@ if (23 > 10) {
 
 const me = 'Georgios';
 console.log(`I'm ${2021 - 1987} years old ${me}.`); // In Template literal we can only insert expressions, and not Statements
+
+
+//===== The Conditional(ternary) Operator =====//
+
+const age = 34;
+// age >= 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink water 💧');
+
+//++++ code with ternary operator ++++//
+const drink = age >= 18 ? 'wine 🍷' : 'water 💧'; // This operation is an expression, and an expression produces a value. So we can store this value into a varriable{'const drink'}.
+console.log(drink);
+
+//++++ that's the same code without the ternary operator. ++++//
+let drink2;
+if (age >= 18) {
+	drink2 = 'wine 🍷';
+} else {
+	drink2 = 'water 💧';
+}
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? 'wine 🍷' : 'water 💧'}`); // Thats an example of the ternary operator works within the template literals
 */
