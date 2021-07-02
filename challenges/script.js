@@ -74,6 +74,13 @@ if (teamDolphins > 100 && teamDolphins > teamKoalas) {
 } else {
 	console.log('No team wins the trophy!!!');
 }
-*/
+
 
 //====== Challenge 4 ======//
+const bill = 275;
+
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+console.log(tip);
+
+console.log(`The tip on ${bill}$ bill is ${bill > 50 && bill < 300 ? bill * 0.15 : bill * 0.2}$ and the total amount is ${bill + tip}$`);
+*/

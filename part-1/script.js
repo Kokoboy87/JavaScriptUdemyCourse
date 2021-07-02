@@ -152,7 +152,6 @@ if (birthYear <= 2000) {
 }
 console.log(century);
 
-
 //===== Type Conversion & Coercion =====//
 // Type Covnersion
 const inputYear = '1987';
@@ -185,7 +184,6 @@ console.log(i);
 let x = '10' - '4' - '3' - 2 + '5'; // the - operator make the strings to a number from '10' to 2 and then the + operator makes it a string again.
 console.log(x);
 
-
 // ===== Truthy and Falsy Values =====//
 // ===========================================================//
 // = 5 Falsy Values: 0, '', undefined, null, NaN = //    // All this values are going to became a false when we try to convert them to a Boolean.
@@ -212,7 +210,6 @@ if (height) {
 } else {
 	console.log('Height undefined');
 }
-
 
 //===== Equality Operators =====//
 const age = 18; // if we change the value to '18' sting only the second 'if' statement will be executed
@@ -241,7 +238,6 @@ if (favorite === 23) {
 
 if (favorite !== 23) console.log('Why not 23?'); // That executes only when we choose numbers other than 23.
 
-
 //===== Logical Operators =====//
 const hasDriveLicense = true; // A
 const hasGoodVision = true; // B
@@ -264,7 +260,6 @@ if (hasDriveLicense && hasGoodVision && !isTired) {
 } else {
 	console.log('Someone else should drive...!!');
 }
-
 
 //===== Switch Statement =====//
 
@@ -308,7 +303,6 @@ if (day === 'monday') {
 	console.log(`Not a valid day!`);
 }
 
-
 //===== Statements and Expressions =====//
 //+++ Expressions +++//
 3 + 4; // is an expression because it produce a value
@@ -323,11 +317,10 @@ if (23 > 10) {
 const me = 'Georgios';
 console.log(`I'm ${2021 - 1987} years old ${me}.`); // In Template literal we can only insert expressions, and not Statements
 
-
 //===== The Conditional(ternary) Operator =====//
 
 const age = 34;
-// age >= 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink water 💧');
+age >= 18 ? console.log('I like to drink wine 🍷') : console.log('I like to drink water 💧');
 
 //++++ code with ternary operator ++++//
 const drink = age >= 18 ? 'wine 🍷' : 'water 💧'; // This operation is an expression, and an expression produces a value. So we can store this value into a varriable{'const drink'}.
