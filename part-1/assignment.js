@@ -72,7 +72,7 @@ switch (language) {
 		console.log('Great language too😋');
 }
 //---------------------------------------//
-*/
+
 
 //======= Conditional (Ternary) Operator =======//
 population >= 33 ? console.log(`${country} population is above average`) : console.log(`${country} population is below average`); // That was my prediction
@@ -81,14 +81,15 @@ console.log(`${country} population is ${population >= 33 ? 'above' : 'below'} av
 
 //------------------------------------------//
 
-// console.log(typeof isIsland);
-// console.log(typeof country);
-// console.log(typeof population);
-// console.log(typeof language);
-// console.log(language);
-// console.log(population / 2);
-// console.log(population);
-// console.log(population > 6);
-// console.log(population < 33);
-// console.log(description);
-// console.log(newDescription);
+console.log(typeof isIsland);
+console.log(typeof country);
+console.log(typeof population);
+console.log(typeof language);
+console.log(language);
+console.log(population / 2);
+console.log(population);
+console.log(population > 6);
+console.log(population < 33);
+console.log(description);
+console.log(newDescription);
+*/
