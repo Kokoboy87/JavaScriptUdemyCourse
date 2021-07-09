@@ -1,4 +1,9 @@
+'use strict';
 /*
+//----------------------------//
+//========= Part 1 ==========//
+//--------------------------//
+
 //======= Data 1 =========//
 //+++++ First Challenge +++++//
 // I use let because i wanted to test the Data 2. with const are not allowed to change the values of the varriables.
@@ -83,4 +88,32 @@ const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 console.log(tip);
 
 console.log(`The tip on ${bill}$ bill is ${bill > 50 && bill < 300 ? bill * 0.15 : bill * 0.2}$ and the total amount is ${bill + tip}$`);
+
+
+//----------------------------//
+//========= Part 2 ==========//
+//--------------------------//
+
+//====== Challenge 1 ======//
+const calcAverageScore = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+//---- Test Data 1 ----//
+const dolphinsScore1 = calcAverageScore(44, 23, 71);
+const koalasScore1 = calcAverageScore(65, 54, 27);
+//---- Test Data 2 ----//
+const dolphinsScore2 = calcAverageScore(85, 54, 41);
+const koalasScore2 = calcAverageScore(23, 34, 27);
+console.log(dolphinsScore2, koalasScore2);
+
+function checkWiner(avgDolphins, avgKoalas) {
+	if (avgDolphins >= 2 * avgKoalas) {
+		console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`);
+	} else if (avgKoalas >= 2 * avgDolphins) {
+		console.log(`Koalas win (${avgKoalas} vs ${avgDolphins})`);
+	} else {
+		console.log(`No team wins...`);
+	}
+	return;
+}
+
+checkWiner(dolphinsScore2, koalasScore2);
 */

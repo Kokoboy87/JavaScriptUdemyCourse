@@ -27,7 +27,7 @@ function percentageOfWorld1(population) {
 	return (population / 7900) * 100;
 }
 
-//++++ Function Expression +++++//
+//++++ Assignment 3 Function Expression +++++//
 
 const percentageOfWorld2 = function (population) {
 	return (population / 7900) * 100;
@@ -41,6 +41,7 @@ console.log(calcChina1, calcChina2);
 console.log(calcGreece1, calcGreece2);
 console.log(calcBrazil1, calcBrazil2);
 
+//====== Assignment 4 Arrow Function =====//
 
 const percentageOfWorld3 = population => (population / 7900) * 100;
 
@@ -48,7 +49,10 @@ const calcChina3 = percentageOfWorld3(1441);
 const calcGreece3 = percentageOfWorld3(10.7);
 const calcBrazil3 = percentageOfWorld3(211);
 console.log(calcChina3, calcGreece3, calcBrazil3);
-*/
+
+
+//===== Assignment 5 Function Calling Other Functions =====//
+//+++++ My Prediction +++++//
 function percentageOfWorld1(population) {
 	return (population / 7900) * 100;
 }
@@ -61,3 +65,21 @@ function describePopulation(country, population) {
 console.log(describePopulation('China', 1441));
 console.log(describePopulation('Greece', 10.7));
 console.log(describePopulation('Brazil', 211));
+
+//-----------------------------------------------------//
+
+// //+++++ Jonas Solution +++++//
+// function percentageOfWorld1(population) {
+// 	return (population / 7900) * 100;
+// }
+
+// const describePopulation = function (country, population) {
+// 	const percentage = percentageOfWorld1(population);
+// 	const description = `${country} has ${population} million peope, which is about ${percentage}% of the world.`;
+// 	console.log(description);
+// };
+
+// describePopulation('China', 1441);
+// describePopulation('Greece', 10.5);
+// describePopulation('Brazil', 211);
+*/

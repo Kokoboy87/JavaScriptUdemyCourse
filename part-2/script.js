@@ -95,4 +95,30 @@ function fruitProcessor(apples, bannanas) {
 	return juice;
 }
 console.log(fruitProcessor(2, 3));
+
+//===== Reviewing Functions ======//
+//+++++ We can have the same parameter name in many differend functions because they are not related to each other. +++++//
+const calcAge = function (birthYear) {
+	return 2021 - birthYear;
+};
+
+const yearsUntilRetirement = function (birthYear, fisrtName) {
+	const age = calcAge(birthYear);
+	const retirement = 65 - age;
+
+	if (retirement > 0) {
+		//++++ The return statement exits emmediately the function +++++//
+		return retirement;
+		//++++ So it never reached the console.log, if we want to execute the console.log "function"  we need to move it before the return statement +++++//
+		console.log(`${fisrtName} retires in ${retirement} years.`);
+	} else {
+		return -1;
+		console.log(`${fisrtName} has already retired 🎉`);
+	}
+
+	// return `${fisrtName} retires in ${retirement} years.`;
+};
+
+console.log(yearsUntilRetirement(1987, 'Georgios'));
+console.log(yearsUntilRetirement(1950, 'Takis'));
 */
