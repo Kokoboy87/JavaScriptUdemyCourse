@@ -40,4 +40,12 @@ const calcBrazil2 = percentageOfWorld2(211);
 console.log(calcChina1, calcChina2);
 console.log(calcGreece1, calcGreece2);
 console.log(calcBrazil1, calcBrazil2);
+
+
+const percentageOfWorld3 = population => (population / 7900) * 100;
+
+const calcChina3 = percentageOfWorld3(1441);
+const calcGreece3 = percentageOfWorld3(10.7);
+const calcBrazil3 = percentageOfWorld3(211);
+console.log(calcChina3, calcGreece3, calcBrazil3);
 */

@@ -39,7 +39,7 @@ console.log(appleBannanaJuice);
 //++++ Takes the '23' string and return as a number ++++//
 const num = Number('23');
 console.log(num);
-*/
+
 
 //====== Functions Declarations Vs. Expressions ======//
 
@@ -63,3 +63,21 @@ const calcAge2 = function (birthYear) {
 //++++ But we CAN'T call the code in the function expression before we defined +++++//
 const age2 = calcAge2(1987);
 console.log(age2);
+*/
+
+//===== Arrow Function ======//
+//++++ Arrow Function is a lot faster and cleaner to write, it doesn't need curly brackets or a return keyword when is a single line code ++++//
+const calcAge3 = birthYear => 2021 - birthYear;
+const age3 = calcAge3(1987);
+console.log(age3);
+
+//++++ But when you have more lines of code we need to use curly brackets and the return keyword. Also we need to use parentheses if we have more parameters +++++//
+const yearsUntilRetirement = (birthYear, fisrtName) => {
+	const age = 2021 - birthYear;
+	const retirement = 65 - age;
+	// return retirement;
+	return `${fisrtName} retires in ${retirement} years.`;
+};
+
+console.log(yearsUntilRetirement(1987, 'George'));
+console.log(yearsUntilRetirement(1976, 'Takis'));
