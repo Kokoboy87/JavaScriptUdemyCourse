@@ -63,7 +63,7 @@ const calcAge2 = function (birthYear) {
 //++++ But we CAN'T call the code in the function expression before we defined +++++//
 const age2 = calcAge2(1987);
 console.log(age2);
-*/
+
 
 //===== Arrow Function ======//
 //++++ Arrow Function is a lot faster and cleaner to write, it doesn't need curly brackets or a return keyword when is a single line code ++++//
@@ -81,3 +81,18 @@ const yearsUntilRetirement = (birthYear, fisrtName) => {
 
 console.log(yearsUntilRetirement(1987, 'George'));
 console.log(yearsUntilRetirement(1976, 'Takis'));
+
+//===== Function calling other Functions ======//
+function cutFruitPieces(fruit) {
+	return fruit * 4;
+}
+
+function fruitProcessor(apples, bannanas) {
+	const applePieces = cutFruitPieces(apples);
+	const bannanaPieces = cutFruitPieces(bannanas);
+
+	const juice = `Juice with ${applePieces} piece of apples and ${bannanaPieces} pieces of bannanas`;
+	return juice;
+}
+console.log(fruitProcessor(2, 3));
+*/

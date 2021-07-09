@@ -49,3 +49,15 @@ const calcGreece3 = percentageOfWorld3(10.7);
 const calcBrazil3 = percentageOfWorld3(211);
 console.log(calcChina3, calcGreece3, calcBrazil3);
 */
+function percentageOfWorld1(population) {
+	return (population / 7900) * 100;
+}
+
+function describePopulation(country, population) {
+	const countryPercentage = percentageOfWorld1(population);
+	return `${country} has ${population} million peope, which is about ${countryPercentage}% of the world.`;
+}
+
+console.log(describePopulation('China', 1441));
+console.log(describePopulation('Greece', 10.7));
+console.log(describePopulation('Brazil', 211));
