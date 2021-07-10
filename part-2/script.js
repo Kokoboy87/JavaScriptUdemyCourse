@@ -122,3 +122,22 @@ const yearsUntilRetirement = function (birthYear, fisrtName) {
 console.log(yearsUntilRetirement(1987, 'Georgios'));
 console.log(yearsUntilRetirement(1950, 'Takis'));
 */
+
+//====== Introduction to Arrays ======///
+//+++++ That's how we store multiple data without Arrays +++++//
+const friend1 = 'Mitsan';
+const friend2 = 'Poutras';
+const friend3 = 'Moulan';
+
+//+++++ And that's the same thing with Arrays +++++//
+const friends = ['Mitsan', 'Poutras', 'Moulan'];
+console.log(friends);
+
+//+++++ We can have an Array without the brackets, but we need to have the keyword 'new' in order to work +++++//
+const years = new Array(1991, 1984, 2021, 1987);
+
+console.log(friends[0]);
+//++++ Array.length is not zero based, so it give us the exact amount of items/elements in Array +++++//
+console.log(friends.length);
+//++++ We can use the Array.length to get the last element of an Array with outneed to know the exact number of the Array ++++//
+console.log(friends[friends.length - 1]);
