@@ -82,4 +82,30 @@ console.log(describePopulation('Brazil', 211));
 // describePopulation('China', 1441);
 // describePopulation('Greece', 10.5);
 // describePopulation('Brazil', 211);
+
+
+//===== Assignment 6 Introduction to Arrays ======//
+function percentageOfWorld1(population) {
+	return (population / 7900) * 100;
+}
+
+const population = [10.7, 1441, 211, 60.4];
+const percentages = [percentageOfWorld1(population[0]), percentageOfWorld1(population[1]), percentageOfWorld1(population[2], percentageOfWorld1(population[3]))];
+console.log(population.length === 4);
+console.log(percentages);
+
+
+//===== Assignment 7 Basic Array Operations(Methods) ======//
+const neighbours = ['Turkey', 'Italy', 'Bulgaria'];
+neighbours.push('Utopia');
+console.log(neighbours);
+neighbours.pop('Utopia');
+console.log(neighbours);
+
+if (!neighbours.includes('Germany')) {
+	console.log('Probably not a central European country');
+}
+
+neighbours[neighbours.indexOf('Italy')] = 'Albania';
+console.log(neighbours);
 */
