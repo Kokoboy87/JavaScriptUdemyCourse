@@ -205,4 +205,33 @@ console.log(friends.includes('23')); // but if i log it as 23 number is going to
 if (friends.includes('Mitsan')) {
 	console.log('You have a friend called Mitsan');
 }
+
+
+//====== Introduction to Objects ======//
+//++++ Array ++++//
+const georgeArray = ['George', 'Kokotinis', 2021 - 1987, 'Bartender', ['Poutras', 'Mitsan', 'Moulan']];
+//++++ Objects ++++//
+//---- In Objects we can define key value pairs ----//
+const george = {
+	firstName: 'George',
+	lastName: 'Kokotinis',
+	age: 2021 - 1987,
+	job: 'Bartender',
+	friends: ['Poutras', 'Mitsan', 'Moulan'],
+};
+console.log(georgeArray);
 */
+
+//===== Dot vs. Bracket Notation =====//
+const george = {
+	firstName: 'George',
+	lastName: 'Kokotinis',
+	age: 2021 - 1987,
+	job: 'Bartender',
+	friends: ['Poutras', 'Mitsan', 'Moulan'],
+};
+console.log(george);
+//++++ Dot Notation ++++//
+console.log(george.lastName);
+//++++ Bracket Notation +++++//
+console.log(george['firstName']);
