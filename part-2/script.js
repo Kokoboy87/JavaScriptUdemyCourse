@@ -220,7 +220,7 @@ const george = {
 	friends: ['Poutras', 'Mitsan', 'Moulan'],
 };
 console.log(georgeArray);
-*/
+
 
 //===== Dot vs. Bracket Notation =====//
 const george = {
@@ -234,4 +234,25 @@ console.log(george);
 //++++ Dot Notation ++++//
 console.log(george.lastName);
 //++++ Bracket Notation +++++//
-console.log(george['firstName']);
+console.log(george['lastName']);
+//++++ In Bracket Notation we can put any expression, we don't have to write the string here we can compute it from some operation ++++//
+const nameKey = 'Name';
+console.log(george['first' + nameKey]);
+console.log(george['last' + nameKey]);
+
+const interestedIn = prompt('What do you want to know about George? Choose between firstName, lastName, age, job, and friends');
+console.log(george[interestedIn]);
+
+if (george[interestedIn]) {
+	console.log(george[interestedIn]);
+} else {
+	console.log('Wrong request!Choose between firstName, lastName, age, job, and friends');
+}
+
+george.location = 'USA';
+george['twitter'] = 'https://twitter.com';
+console.log(george);
+
+//++++ Challenge ++++//
+console.log(`${george['firstName']} has ${george.friends.length} friends, and his best friend is called ${george.friends[0]}.`);
+*/
