@@ -108,4 +108,23 @@ if (!neighbours.includes('Germany')) {
 
 neighbours[neighbours.indexOf('Italy')] = 'Albania';
 console.log(neighbours);
+
+
+//====== Introduction to Objects ======//
+
+const myCountry = {
+	country: 'Greece',
+	capital: 'Athens',
+	language: 'Greek',
+	population: 10.7,
+	neighbours: ['Albania', 'Turkey', 'Italy'],
+};
+
+//===== Dot vs. Bracket Notation =====//
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}- speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}.`);
+
+myCountry.population += 2;
+console.log(myCountry.population);
+myCountry['population'] -= 2;
+console.log(myCountry.population);
 */
