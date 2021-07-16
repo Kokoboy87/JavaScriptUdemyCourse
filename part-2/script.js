@@ -255,4 +255,50 @@ console.log(george);
 
 //++++ Challenge ++++//
 console.log(`${george['firstName']} has ${george.friends.length} friends, and his best friend is called ${george.friends[0]}.`);
+
+
+//===== Object Methods =====//
+const george = {
+	firstName: 'George',
+	lastName: 'Kokotinis',
+	birthYear: 1987,
+	job: 'Bartender',
+	friends: ['Poutras', 'Mitsan', 'Moulan'],
+	hasDriversLicense: true,
+
+	//+++++ Functions that are atteched to Objects called Methods(Function Value) +++++//
+	// calcAge: function (birthYear) {
+	// 	return 2021 - birthYear;
+	// },
+
+	// //++++ This variable ++++//
+	// calcAge: function () {
+	// 	//++++ 'This' variable print the whole george object ++++//
+	// 	console.log(this);
+	// 	return 2021 - this.birthYear;
+	// },
+
+	//++++ We can store a new property with 'this' keyword. ++++//
+	calcAge: function () {
+		//++++ we can use the Dot notation to create new Properties ++++//
+		this.age = 2021 - this.birthYear;
+		return this.age;
+	},
+
+	//==== Challenge Method ====//
+	getSummary: function () {
+		return `${this.firstName} is a ${this.calcAge()}-years old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;
+	},
+};
+
+//++++ Dot Notation ++++//
+//++++ with 'This' variable we don't need to add anything inside the parentheses ++++//
+console.log(george.calcAge());
+console.log(george.age);
+console.log(george.age);
+//++++ Bracket Notation ++++//
+// console.log(george['calcAge'](1987));
+
+//==== Challenge =====//
+console.log(george.getSummary());
 */

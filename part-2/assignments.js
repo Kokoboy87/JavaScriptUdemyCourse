@@ -128,3 +128,24 @@ console.log(myCountry.population);
 myCountry['population'] -= 2;
 console.log(myCountry.population);
 */
+
+//====== Object Methods =====//
+const myCountry2 = {
+	country: 'Greece',
+	capital: 'Athens',
+	language: 'Greek',
+	population: 10.7,
+	neighbours: ['Albania', 'Turkey', 'Italy'],
+
+	describe: function () {
+		return `${this.country} has ${this.population} million ${this.language}- speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}.`;
+	},
+
+	checkIsland: function () {
+		this.isIsland = this.neighbours.lenth === 0 ? true : false;
+		return this.isIsland;
+	},
+};
+
+console.log(myCountry2.describe());
+console.log(myCountry2.checkIsland());
