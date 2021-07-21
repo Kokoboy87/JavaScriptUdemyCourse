@@ -133,4 +133,40 @@ const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
 console.log(tips);
 const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
 console.log(total);
+
+
+//====== Challenge 6 =====//
+
+const mark = {
+	fullName: 'Mark Miller',
+	height: 1.69,
+	weight: 78,
+
+	calcBMI: function () {
+		this.bmi = this.weight / (this.height * this.height);
+		return this.bmi;
+	},
+};
+
+const john = {
+	fullName: 'John Smith',
+	height: 1.95,
+	weight: 92,
+
+	calcBMI: function () {
+		this.bmi = this.weight / this.height ** 2;
+		return this.bmi;
+	},
+};
+
+john.calcBMI();
+mark.calcBMI();
+
+if (john.bmi > mark.bmi) {
+	console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`);
+} else if (mark.bmi > john.bmi) {
+	console.log(`${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})`);
+} else {
+	console.log('Something is wrong. Try again!!');
+}
 */

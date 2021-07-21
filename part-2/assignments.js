@@ -142,7 +142,7 @@ const myCountry2 = {
 	},
 
 	checkIsland: function () {
-		this.isIsland = this.neighbours.lenth === 0 ? true : false;
+		this.isIsland = this.neighbours.length === 0 ? true : false;
 		return this.isIsland;
 	},
 };
