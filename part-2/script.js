@@ -285,7 +285,7 @@ const george = {
 		return this.age;
 	},
 
-	//==== Challenge Method ====//
+	//----- Challenge Method -----//
 	getSummary: function () {
 		return `${this.firstName} is a ${this.calcAge()}-years old ${this.job}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;
 	},
@@ -299,6 +299,40 @@ console.log(george.age);
 //++++ Bracket Notation ++++//
 // console.log(george['calcAge'](1987));
 
-//==== Challenge =====//
+//---- Challenge -----//
 console.log(george.getSummary());
+
+
+//====== Iteration: the for loop ======//
+//++++ Tha's a Completely Wrong way to count reps +++++//
+// console.log('Lifting weigths repetition 1💪');
+// console.log('Lifting weigths repetition 2💪');
+// console.log('Lifting weigths repetition 3💪');
+// console.log('Lifting weigths repetition 4💪');
+// console.log('Lifting weigths repetition 5💪');
+// console.log('Lifting weigths repetition 6💪');
+// console.log('Lifting weigths repetition 7💪');
+// console.log('Lifting weigths repetition 8💪');
+// console.log('Lifting weigths repetition 9💪');
+// console.log('Lifting weigths repetition 10💪');
+
+//++++ And here is how we can do it with a for loop ++++//
+//----- 'for' loop keeps running while condition is TRUE -----//
+for (let rep = 1; rep <= 10; rep++) {
+	console.log(`Lifting weigths repetition ${rep} 💪`);
+}
 */
+
+//====== Looping Arrays, Breaking & Continuing ======//
+const george = ['George', 'Kokotinis', 2021 - 1987, 'Bartender', ['Poutras', 'Mitsan', 'Moulan']];
+
+const types = [];
+
+for (let i = 0; i < george.length; i++) {
+	//---- Reading from george array ----//
+	console.log(george[i], typeof george[i]);
+	//---- Filling types array ----//
+	types[i] = typeof george[i];
+}
+
+console.log(types);

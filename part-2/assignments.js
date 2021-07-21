@@ -127,7 +127,7 @@ myCountry.population += 2;
 console.log(myCountry.population);
 myCountry['population'] -= 2;
 console.log(myCountry.population);
-*/
+
 
 //====== Object Methods =====//
 const myCountry2 = {
@@ -149,3 +149,10 @@ const myCountry2 = {
 
 console.log(myCountry2.describe());
 console.log(myCountry2.checkIsland());
+
+
+//===== Iteration: The for loop =====//
+for (let voter = 1; voter <= 50; voter++) {
+	console.log(`Voter number ${voter} is currently voting.`);
+}
+*/
