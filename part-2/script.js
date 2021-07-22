@@ -332,7 +332,31 @@ for (let i = 0; i < george.length; i++) {
 	//---- Reading from george array ----//
 	console.log(george[i], typeof george[i]);
 	//---- Filling types array ----//
-	types[i] = typeof george[i];
+	// types[i] = typeof george[i];
+	types.push(typeof george[i]);
 }
 
 console.log(types);
+//++++ Very Important to understand this snippet of code(from 341 to 347) +++++//
+const years = [1987, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+	ages.push(2021 - years[i]);
+}
+console.log(ages);
+
+//---- Continue and Break ----//
+console.log('---- ONLY STRINGS ----');
+for (let i = 0; i < george.length; i++) {
+	if (typeof george[i] !== 'string') continue;
+
+	console.log(george[i], typeof george[i]);
+}
+
+console.log('---- BREAK WITH NUMBER ----');
+for (let i = 0; i < george.length; i++) {
+	if (typeof george[i] === 'number') break;
+
+	console.log(george[i], typeof george[i]);
+}
