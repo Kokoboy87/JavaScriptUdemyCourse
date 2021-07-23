@@ -172,4 +172,28 @@ for (let i = 0; i < population.length; i++) {
 	percentage2.push(perc);
 }
 console.log(percentage2);
+
+//====== Looping Backward and Loops in Loops ======//
+const listOfNeighbors = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+
+for (let i = 0; i < listOfNeighbors.length; i++) {
+	for (let j = 0; j < listOfNeighbors[i].length; j++) {
+		console.log(`Neighbors: ${listOfNeighbors[i][j]}`);
+	}
+}
+
+//===== The While Loop ======//
+function percentageOfWorld1(population1) {
+	return (population1 / 7900) * 100;
+}
+const population1 = [10.7, 1441, 211, 60.4];
+//+++++ looping Array prediction +++++//
+const percentage3 = [];
+let i = 0;
+while (i < population1.length) {
+	const perc = percentageOfWorld1(population1[i]);
+	percentage3.push(perc);
+	i++;
+}
+console.log(percentage3);
 */
