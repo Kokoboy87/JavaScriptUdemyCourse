@@ -155,4 +155,21 @@ console.log(myCountry2.checkIsland());
 for (let voter = 1; voter <= 50; voter++) {
 	console.log(`Voter number ${voter} is currently voting.`);
 }
+
+
+//===== Looping Arrays, Breaking and Continuing =====//
+function percentageOfWorld1(population) {
+	return (population / 7900) * 100;
+}
+//++++ Array example ++++//
+const population = [10.7, 1441, 211, 60.4];
+const percentages = [percentageOfWorld1(population[0]), percentageOfWorld1(population[1]), percentageOfWorld1(population[2]), percentageOfWorld1(population[3])];
+console.log(percentages);
+//+++++ looping Array prediction +++++//
+const percentage2 = [];
+for (let i = 0; i < population.length; i++) {
+	const perc = percentageOfWorld1(population[i]);
+	percentage2.push(perc);
+}
+console.log(percentage2);
 */

@@ -321,7 +321,7 @@ console.log(george.getSummary());
 for (let rep = 1; rep <= 10; rep++) {
 	console.log(`Lifting weigths repetition ${rep} 💪`);
 }
-*/
+
 
 //====== Looping Arrays, Breaking & Continuing ======//
 const george = ['George', 'Kokotinis', 2021 - 1987, 'Bartender', ['Poutras', 'Mitsan', 'Moulan']];
@@ -360,3 +360,45 @@ for (let i = 0; i < george.length; i++) {
 
 	console.log(george[i], typeof george[i]);
 }
+
+
+//===== Looping Backward and Loops in Loops =====//
+const george = ['George', 'Kokotinis', 2021 - 1987, 'Bartender', ['Poutras', 'Mitsan', 'Moulan'], true];
+
+for (let i = george.length - 1; i >= 0; i--) {
+	console.log(i, george[i]);
+}
+
+//++++ Loop inside a Loop ++++//
+for (let exercise = 1; exercise < 4; exercise++) {
+	console.log(`------------- Start exercise ${exercise}`);
+
+	for (let rep = 1; rep < 6; rep++) {
+		console.log(`Exercise ${exercise}: Lifting weigth repetition ${rep}`);
+	}
+}
+
+
+// //===== The While Loop =====//
+// for (let rep = 1; rep <= 10; rep++) {
+// 	console.log(`Lifting weigths repetition ${rep} 💪`);
+// }
+//+++++ In the While Loop the repetition is happening outside the Loop +++++//
+//+++++ While Loop is more versatile than For Loop, and that's because it doesn't really need a counter +++++//
+let rep = 1;
+while (rep <= 10) {
+	// console.log(`WHILE: Lifting weigths repetition ${rep} 💪`);
+	rep++;
+}
+
+//++++ Roll a dice with While Loop ++++//
+//++++ Math.trunc get rid of the decimals from the number ++++//
+let dice = Math.trunc(Math.random() * 6) + 1;
+// console.log(dice);
+
+while (dice !== 6) {
+	console.log(`You rolled a ${dice}`);
+	dice = Math.trunc(Math.random() * 6) + 1;
+	if (dice === 6) console.log('Loop is about to end...');
+}
+*/
