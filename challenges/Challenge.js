@@ -124,6 +124,7 @@ const calcTip = function (bill) {
 	// //!!!!!! That's my solution, but because of that(i create a variable inside the function) the Array was log to the console as undefined and NaN. Instead i need to just return the function as the code below !!!!!!!//
 	// const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
 	// console.log(tip);
+	// //!!!!! i just need to return it !!!!!//
 	return bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
 };
 
@@ -169,4 +170,31 @@ if (john.bmi > mark.bmi) {
 } else {
 	console.log('Something is wrong. Try again!!');
 }
+
+
+//====== Challenge 7 =====//
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+let tips = [];
+let total = [];
+
+for (let i = 0; i < bills.length; i++) {
+	let calcTips = bills[i] <= 300 && bills[i] >= 50 ? bills[i] * 0.15 : bills[i] * 0.2;
+	tips.push(calcTips);
+	let calcTotal = bills[i] + tips[i];
+	total.push(calcTotal);
+}
+console.log(`-----Bill:${bills}`);
+console.log(`-----Tips:${tips}`);
+console.log(`-----Total:${total}`);
+
+const calcAverage = function (arr) {
+	let sum = 0;
+	for (let i = 0; i < arr.length; i++) {
+		//sum = sum + arr[i];
+		sum += arr[i];
+	}
+	return sum / arr.length;
+};
+console.log(calcAverage([2, 3, 7]));
 */
